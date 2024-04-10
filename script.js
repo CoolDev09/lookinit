@@ -1,46 +1,44 @@
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton'); // Get the search button
     const searchResults = document.getElementById('searchResults');
 
-    searchInput.addEventListener('input', function() {
-        const query = searchInput.value.trim().toLowerCase();
-        searchResults.innerHTML = '';
+    function search() {
+        const query = searchInput.value.trim();
 
         if (query.length === 0) {
+            searchResults.innerHTML = '';
             return;
         }
 
-        // Sample data with both result text, function, and URL
-        const data = [
-            { text: 'Home', URL: 'index.html' },
-            { text: 'Time', URL: 'clock.html' },
-            { text: 'Clock', URL: 'clock.html' },
-            { text: 'Dice', URL: 'gamble.html' },
-            { text: 'Roll', URL: 'gamble.html' },
-            { text: 'Games', URL: 'games.html' },
-            { text: 'Unblocked', URL: 'games.html' },
-        ];
+        const url = formatURL(query);
+        openLink(url);
+    }
 
-        const filteredData = data.filter(item => item.text.toLowerCase().includes(query));
-
-        if (filteredData.length === 0) {
-            searchResults.innerHTML = '<button disabled>No results found</button>';
-        } else {
-            filteredData.forEach(item => {
-                const button = document.createElement('button');
-                button.textContent = item.text;
-                button.addEventListener('click', function() {
-                    if (typeof item.func === 'function') {
-                        item.func();
-                    } else {
-                        console.error('Function ' + item.func + ' is not defined.');
-                    }
-                    if (item.URL) {
-                        window.open(item.URL, '_self'); // Open URL in new tab
-                    }
-                });
-                searchResults.appendChild(button);
-            });
+    searchInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            search();
         }
     });
+
+    searchButton.addEventListener('click', search); // Add click event listener to the search button
+
+    // Function to open the link entered by the user
+    function openLink(url) {
+        var win = window.open();
+        var iframe = win.document.createElement('iframe');
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.border = "none";
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+    }
+
+    // Function to format the URL
+    function formatURL(url) {
+        if (!url.startsWith('http://') && !url.startsWith('https://')) {
+            return 'https://' + url;
+        }
+        return url;
+    }
 });
