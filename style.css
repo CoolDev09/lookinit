@@ -48,35 +48,35 @@ font-size: 50px;
 #Youtube {
     position: absolute;
     left: 350px; 
-    bottom: 340px;
+    bottom: 300px;
     color:#595353;
 }
 
 #Gmail {
     position: absolute;
     left: 500px; 
-    bottom: 340px;
+    bottom: 300px;
     color:#595353;
 }
 
 #Discord {
     position: absolute;
     left: 650px; 
-    bottom: 340px;
+    bottom: 300px;
     color:#595353;
 }
 
 #Chatgpt {
     position: absolute;
     left: 800px; 
-    bottom: 340px;
+    bottom: 300px;
     color:#595353;
 }
 
 #Google {
     position: absolute;
     left: 950px; 
-    bottom: 340px;
+    bottom: 300px;
     color:#595353;
 }
 
