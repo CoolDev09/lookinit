@@ -5,9 +5,9 @@ font-size: 50px;
 }
 
 .search-container {
-    display: flex;
+    display: block;
     justify-content: center; /* Horizontally center the container */
-    align-items: center;
+    bottom: 10px;
 }
 
 #searchButton {
@@ -16,8 +16,8 @@ font-size: 50px;
     padding: 10px; 
     font-size: 25px; 
     border: 1px solid #999999; 
-    border-top-right-radius: 15px; /* Apply border radius to top right corner */
-    border-bottom-right-radius: 15px; /* Apply border radius to bottom right corner */
+    height: 71px;
+    border-radius: 15px;
     background-color: #545454;
     color: #747474;
     cursor: pointer;
@@ -28,30 +28,6 @@ font-size: 50px;
     color:#ffffff;
 }
 
-#searchResults button {
-    display: block;
-    margin-bottom: 5px; /* Adjust spacing between buttons */
-    padding: 10px 20px; /* Adjust button padding */
-    background-color: #4d524d; /* Green background color */
-    color: #000000;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    height: 50px;
-    width: 650px;
-}
-
-#searchResults button:hover {
-    background-color: #000000; /* Darker green color on hover */
-    color:#ffffff;
-}
-
-#searchResults button:disabled {
-    background-color: #dddddd; /* Gray background color for disabled button */
-    cursor: not-allowed;
-}
-
 
 #searchInput {
     width: 650px; 
@@ -59,12 +35,9 @@ font-size: 50px;
     padding: 10px; 
     font-size: 25px; 
     border: 1px solid #999999; 
-    border-top-left-radius: 15px; /* Apply border radius to top left corner */
-    border-bottom-left-radius: 15px; /* Apply border radius to bottom left corner */
-    margin-right: 0px;
+    border-radius: 15px;
     background-color: #585858;
     color: #747474;
-
 }
 
 #searchInput:focus {
@@ -140,4 +113,84 @@ font-size: 50px;
     left: 950px; 
     bottom: 200px; 
     color:#595353;
+}
+
+
+.search-container2 {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Horizontally center the container */
+    align-items: center;
+}
+
+#searchButton2 {
+    height: 71px;
+    width: 100px;
+    padding: 10px; 
+    font-size: 25px; 
+    border: 1px solid #999999; 
+    border-radius: 15px;
+    background-color: #545454;
+    color: #747474;
+    cursor: pointer;
+}
+
+#searchButton2 button:hover {
+    background-color: #000000; 
+    color:#ffffff;
+}
+
+
+#searchInput2 {
+    width: 650px; 
+    height: 50px;
+    padding: 10px; 
+    font-size: 25px; 
+    border: 1px solid #999999; 
+    border-radius: 15px;
+    background-color: #585858;
+    color: #747474;
+}
+
+#searchInput2:focus {
+    outline: none; 
+    border-color: #636569; 
+}
+
+#searchResults button {
+    display: block;
+    margin-bottom: 5px; /* Adjust spacing between buttons */
+    padding: 10px 20px; /* Adjust button padding */
+    background-color: #4d524d; /* Green background color */
+    color: #747474;
+    font-size: 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 50px;
+    width: 650px;
+}
+
+#searchResults2 button {
+    display: block;
+    margin-bottom: 5px; /* Adjust spacing between buttons */
+    padding: 10px 20px; /* Adjust button padding */
+    background-color: #4d524d; /* Green background color */
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 50px;
+    width: 650px;
+}
+
+#searchResults2 button:hover {
+    background-color: #000000; /* Darker green color on hover */
+    color:#ffffff;
+}
+
+#searchResults2 button:disabled {
+    background-color: #dddddd; /* Gray background color for disabled button */
+    cursor: not-allowed;
 }
