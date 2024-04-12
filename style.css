@@ -117,37 +117,6 @@ font-size: 50px;
 }
 
 
-/*Credits section*/
-#Git {
-    background-color: #545454; 
-    color: #747474;
-    height: 35px;
-    width: 100px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-#Ins {
-    background-color: #545454; 
-    color: #747474;
-    height: 35px;
-    width: 150px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-#Clog {
-    background-color: #545454; 
-    color: #747474;
-    height: 35px;
-    width: 110px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
 /*Search Bar 2*/
 .search-container2 {
     display: flex; /* Use flexbox layout */
