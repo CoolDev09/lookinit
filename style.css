@@ -4,6 +4,7 @@ color:#595353;
 font-size: 50px;
 }
 
+/*Search Bar 1*/
 .search-container {
     display: block;
     justify-content: center; /* Horizontally center the container */
@@ -28,7 +29,6 @@ font-size: 50px;
     color:#ffffff;
 }
 
-
 #searchInput {
     width: 650px; 
     height: 50px;
@@ -45,38 +45,39 @@ font-size: 50px;
     border-color: #636569; 
 }
 
+/*Symbols*/
 #Youtube {
     position: absolute;
     left: 350px; 
-    bottom: 300px;
+    bottom: 340px;
     color:#595353;
 }
 
 #Gmail {
     position: absolute;
     left: 500px; 
-    bottom: 300px;
+    bottom: 340px;
     color:#595353;
 }
 
 #Discord {
     position: absolute;
     left: 650px; 
-    bottom: 300px;
+    bottom: 340px;
     color:#595353;
 }
 
 #Chatgpt {
     position: absolute;
     left: 800px; 
-    bottom: 300px;
+    bottom: 340px;
     color:#595353;
 }
 
 #Google {
     position: absolute;
     left: 950px; 
-    bottom: 300px;
+    bottom: 340px;
     color:#595353;
 }
 
@@ -116,6 +117,38 @@ font-size: 50px;
 }
 
 
+/*Credits section*/
+#Github-credit {
+    background-color: #545454; 
+    color: #747474;
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#Instructions {
+    background-color: #545454; 
+    color: #747474;
+    height: 35px;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#Change-log {
+    background-color: #545454; 
+    color: #747474;
+    height: 35px;
+    width: 110px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/*Search Bar 2*/
 .search-container2 {
     display: flex; /* Use flexbox layout */
     justify-content: center; /* Horizontally center the container */
