@@ -117,6 +117,29 @@ font-size: 50px;
 }
 
 
+/*Credits section*/
+#Github-credit {
+    background-color: #545454; 
+    color: #747474;
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#Instructions {
+    background-color: #545454; 
+    color: #747474;
+    height: 35px;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
 /*Search Bar 2*/
 .search-container2 {
     display: flex; /* Use flexbox layout */
